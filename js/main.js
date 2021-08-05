@@ -1,2 +1,3 @@
-console.log("Hola Lucius");
-console.log("Holiwiiiiiiiii");
+$(document).ready(function(){
+  console.log("Hola lucius");
+});
