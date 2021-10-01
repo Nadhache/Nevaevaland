@@ -1,0 +1,14 @@
+{
+  "aguila": {
+    "nombre" : "Águila",
+    "autor" : "internet",
+    "url": "http://4everstatic.com/imagenes/850xX/animales/aves/aguila-259005.jpg",
+    "fecha": 1633074946
+  },
+  "mapache": {
+    "nombre": "Mapache",
+    "autor": "internet",
+    "url": "http://4everstatic.com/imagenes/850xX/animales/salvajes/mapache-259000.jpg",
+    "fecha": 1633074950
+  }
+}
