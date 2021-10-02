@@ -17,3 +17,7 @@ height: auto;
   position: fixed;
   top: 0;
 }
+
+#about {
+  margin-top: 20vh;
+}
