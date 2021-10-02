@@ -13,13 +13,13 @@ $(document).ready(function(){
     $.each(json, function(index, field) {
       if (field.autor == "Lu" ) {
         console.log(field.autor + " / " + field.name);
-        $("#jLu").html("<img src='" + field.url + "'>");
+        $("#jLu").append("<img src='" + field.url + "'>");
       } else if (field.autor == "Vicky" ) {
         console.log(field.autor + " / " + field.name);
-        $("#jVicky").html("<img src='" + field.url + "'>");
+        $("#jVicky").append("<img src='" + field.url + "'>");
       } else {
         console.log(field.autor + " / " + field.name);
-        $("#jComun").html("<img src='" + field.url + "'>");
+        $("#jComun").append("<img src='" + field.url + "'>");
   }
     });
   }
