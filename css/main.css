@@ -1,22 +1,99 @@
-h1 {
-  background-color: red;
-}
+/*vars*/
 
+
+:root{
+  --max-width: 1120px;
+  --font-logo:'Lovers Quarrel', cursive;
+  --transition: 0.3s ease-in-out all;
+  --font-nav: 'Tauri', sans-serif;
+  }
+
+
+/*IMAGES*/
 img {
-width: 50%;
+width: 50vw;
 height: auto;
 }
 
-.flex-container {
+.nav-logo {
+  color: black;
+  font-family: var(--font-logo);
+  text-decoration: none;
+  font-size: 4em;
 
 }
 
-#navbar {
-  width: 100%;
-  height: 150px;
-  position: fixed;
-  top: 0;
+/* @media only screen and (min-width: 768px){
+  .nav-logo {
+    font-size: 6vw;
+  }
+} */
+/*
+=====================
+      NABVAR
+=====================
+*/
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
 }
+.nav-center {
+  width: 90vw;
+  max-width: var(--max-width);
+  /* background-color: red; */
+}
+
+.nav-header {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn {
+  padding: 0.15rem 0.75rem;
+}
+
+.nav-btn i {
+  font-size: 1.25rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links {
+  height: 310px;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  color: black;
+  letter-spacing: normal;
+  padding: 1rem 0;
+  border-top: 1px solid black;
+  text-decoration: none;
+  transition: var(--transition);
+  font-family: var(--font-nav);
+}
+.contact {
+  border-bottom: 1px solid grey;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+
+
 
 #about {
   margin-top: 20vh;
