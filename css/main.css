@@ -1,18 +1,23 @@
-/*vars*/
-
-
-:root{
+/*
+===============
+    vars
+================
+*/
+:root {
   --max-width: 1120px;
-  --font-logo:'Lovers Quarrel', cursive;
+  --font-logo: 'Lovers Quarrel', cursive;
   --transition: 0.3s ease-in-out all;
   --font-nav: 'Tauri', sans-serif;
-  }
+}
 
-
-/*IMAGES*/
+/*
+================
+    IMAGES
+================
+*/
 img {
-width: 50vw;
-height: auto;
+  width: 50vw;
+  height: auto;
 }
 
 .nav-logo {
@@ -20,7 +25,6 @@ height: auto;
   font-family: var(--font-logo);
   text-decoration: none;
   font-size: 4em;
-
 }
 
 /* @media only screen and (min-width: 768px){
@@ -28,18 +32,34 @@ height: auto;
     font-size: 6vw;
   }
 } */
+.btn {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: transparent;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  transition: var(--transtion);
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: blue;
+}
+
 /*
 =====================
       NABVAR
 =====================
 */
-
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   /* background-color: blue; */
 }
+
 .nav-center {
   width: 90vw;
   max-width: var(--max-width);
@@ -85,6 +105,7 @@ height: auto;
   transition: var(--transition);
   font-family: var(--font-nav);
 }
+
 .contact {
   border-bottom: 1px solid grey;
 }
@@ -93,8 +114,50 @@ height: auto;
   color: blue;
 }
 
+@media screen and (min-width: 992px) {
+  .nav-btn {
+    display: none;
+  }
 
+  .navbar {
+    height: 6rem;
+  }
 
+  .nav-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-header {
+    height: auto;
+    margin-right: 2rem;
+    padding: 0;
+  }
+
+  .nav-links {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-link {
+    border-top: none;
+    padding: 0;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .contact {
+    border-bottom: none;
+  }
+}
+
+/*
+=========================
+        FIN NAV
+=========================
+*/
 #about {
   margin-top: 20vh;
 }
